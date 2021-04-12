@@ -1,0 +1,283 @@
+/* Table of Content
+==================================================
+#Element
+#Layout
+#Module 
+#State
+#Theme
+#Media Query
+
+/* #Element
+================================================== */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 1.43;
+}
+
+section {
+    padding: 2.5rem 3rem;
+}
+
+article {
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+button {
+    border-radius: 9px;
+    background-color: #165c96;
+    padding: .5rem;
+    color: white;
+}
+
+span {
+    font-weight: 600;
+}
+
+/* #Layout
+================================================== */
+
+header {
+    height: 45px;
+    background-color: #165C96;
+    color: white;
+    display: flex;
+}
+
+nav::after {
+    content: &#8595;
+}
+
+/* #Module
+================================================== */
+
+.breadcrumb {
+    height: 45px;
+    background-color: #F2F3F5;
+}
+
+.breadcrumb a {
+    color: #165C96;
+}
+
+.modes {
+    text-align: center;
+}
+
+.modes h2 {
+    margin-bottom: 2rem;
+}
+
+.mode-selection {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.mode-selection a {
+    margin: 0 1.5rem;
+    text-decoration: none;
+}
+
+.mode-selection a img {
+    width: 64px;
+    height: 64px;
+    border: solid 3px;
+    border-radius: 50%;
+}
+
+.mode-selection a.subway-mode {
+    color: #d0011b;
+}
+
+.mode-selection a.bus-mode {
+    color: #f6a623;
+}
+
+.mode-selection a.rail-mode {
+    color: #b55191;
+}
+
+.mode-selection a.ferry-mode {
+    color: #4990e2;
+}
+
+
+.mode-selection a.subway-mode img {
+    border-color: #d0011b;
+    color: #d0011b;
+}
+
+.mode-selection a.bus-mode img {
+    border-color: #f6a623;
+    color: #d0011b;
+}
+
+.mode-selection a.rail-mode img {
+    border-color: #b55191;
+    color: #d0011b;
+}
+
+.mode-selection a.ferry-mode img {
+    border-color: #4990e2;
+    color: #d0011b;
+}
+
+/* Status */
+
+.status {
+    background-color: rgba(181, 81, 145, 0.1);
+}
+
+.status h1 {
+    text-align: center;
+}
+
+/* Status Circle */
+
+.circle {
+    width: 15px;
+    height: 15px;
+    background-color: #62bd19;
+    border-radius: 50%;
+    position: relative;
+    top: -20px;
+    left: 4.5px
+}
+
+.ringring {
+    border: 3px solid #62bd19;
+    -webkit-border-radius: 30px;
+    height: 25px;
+    width: 25px;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.0
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(0.1, 0.1);
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0.0;
+    }
+}
+
+.issues h1 {
+    margin-bottom: 1.5rem;
+}
+
+.issues article {
+    border-top: 1px solid #f6a623;
+    border-bottom: 1px solid #f6a623;
+}
+
+.issues article h3 {
+    background-color: rgba(245, 166, 35, 0.25);
+    padding: .5rem 1rem;
+    font-weight: 600;
+}
+
+.issues article.track-change h3::before {
+    width: 28px;
+    content: url(http://lorempixel.com/28/24/);
+    vertical-align: middle;
+    padding-right: .5rem;
+}
+
+.issues article h3 {
+    background-color: rgba(245, 166, 35, 0.25);
+    padding: .5rem 1rem;
+    font-weight: 600;
+}
+
+.issues article .issue-container {
+    padding: .5rem 1rem 1rem 1rem;
+    display: flex;
+}
+
+.issues article .detail {
+    width: 73.5%;
+}
+
+.issues article .detail form {
+    text-align: right;
+    font-style: italic;
+}
+
+.issues article .detail form input {
+    margin-left: 1rem;
+}
+
+.issues article .dates {
+    width: 23.5%;
+    padding-left: 5%;
+    font-size: 10px;
+}
+
+.issues article .dates .effective {
+    margin-bottom: .5rem;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
+.status .delay {
+    display: flex;
+}
+
+.route {
+    display: flex;
+    justify-content: space-around;
+}
+
+.route div {
+    background-color: #b55191;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: .25rem 0;
+}
+
+/* Media queries
+-------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 480px) {}
+
+
+
+/* Print styles
+-------------------------------------------------------------------------------*/
+
+@media print {}
